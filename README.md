@@ -76,3 +76,49 @@ URL Anatomy [Explanation](https://www.youtube.com/watch?v=ADQ_rhefgEk) & Differe
 **3. Network Layer Protocols**
 
 - **[ARP](https://www.youtube.com/watch?v=mqWEWye-8m8&ab_channel=HusseinNasser) ( Address Resolution Protocol ) __ [NAT](https://www.youtube.com/watch?v=RG97rvw1eUo&ab_channel=HusseinNasser) ( Network Address Translation )** **&** **PAT (** **Protocol Address Translation )**
+
+---
+
+# 3. Operating System
+
+Where do you think all our systems live & operate? Anything running on the computer uses its resources from CPU cycles, memory, network, or disk operation. So there should be some layer between these H.W. resources and their consumers
+
+**Basic Terminologies**
+
+- Processes, Threads, Context Switching, Scheduling, System API Calls [ I/O, DB, … ] | CPU Cores & Threads
+- Caching & Pagination, Resources Allocation, Sockets, Kernel & H.W, Init Process | Virtual Machines | Concurrency Vs. Parallelism
+
+**Resources**
+
+- Cracking The Coding Interview ( Chapter 15 ) __ Programming Interviews Exposed ( Concurrency Chapter )
+- Operating System Internals And Design Principles __ The little book of semaphores __ Medium [Article](https://medium.com/cracking-the-data-science-interview/the-10-operating-system-concepts-software-developers-need-to-remember-480d0734d710)
+- Understanding Embedded Linux [Playlist](https://www.youtube.com/playlist?list=PLWXRxAK4bUzc9gq-W2xWDe9zEaDcowLfs) __ The 10 OS Concepts SWD Need to Remember - [Article](https://medium.com/cracking-the-data-science-interview/the-10-operating-system-concepts-software-developers-need-to-remember-480d0734d710)
+
+**Processes**
+
+[Virtual Memory](https://www.youtube.com/watch?v=hEh6ZVP_U1w) ( During The Execution ) ,, [State Diagram](https://www.youtube.com/watch?v=JhWREa77Z88) ( The Life Cycle )
+
+**Shell Process & Terminal** as an interface to execute the binaries through **Commands** and **Environment Variables**
+
+Executing Commands in The Shell as a Processes  ⇒  [Part_1](https://www.youtube.com/watch?v=lrQpf39CbFA)  |   [Part_2](https://www.youtube.com/watch?v=3QTDkcnlH9A)  |  [Part_3](https://www.youtube.com/watch?v=cli9fyCvbWQ)
+
+There's a huge relationship between the O.S. and the system files. Actually, Linux is Handling anything through files, the media devices like USB, Storage devices, Processes, Users, Libraries, everything is a file so we can access the O.S. stuff with some paths in the [file Systems](https://www.youtube.com/watch?v=KN8YgJnShPM)
+
+Now, you know the commands, the shell process, the processes, and the signals. So imagine every application is a process and the OS may receive signals from a user to change the process state, so we can make a script ( some shell commands ) or an application ( like the system monitor ) or a package ( like PM2 ) to manage the processes life cycle. In case of any failure, we can kill a poisoned process or restart the production application, in addition to collecting some information about all the processes in different states for monitoring.
+
+---
+
+# References
+
+**Technical** 
+
+- [MozilaDocs](http://developer.mozilla.org) ,, [GoogleDocs](http://developers.google.com/web)
+- Conferences ⇒ QConf, InfoQ, Devoxx, GOTO Conferences, KubeCon, DockerCon, PyConf, JSConf
+- Technical Blogs from Big Tech Companies
+- Technical Articles from developers e.g [Medium.com](http://medium.com) , [Dev.to](http://dev.to)
+
+**Presentation Diagrams** ⇒ [Gliffy](https://gliffy.com) ,, [Draw](https://draw.io)
+
+**Downloading Books** ⇒ [http://library.lol/](http://library.lol/) ,, PDF drive
+
+**Searching for Jobs** ⇒ Glassdoor, Crossover, Linkedin, Microverse, CarrerArch, Toptal, Remoteplatz
