@@ -4,7 +4,8 @@ to collect all the important topics that need to be covered in one place, and cl
 # Table of Contents
 [1. Languages & Runtime Environments](#1-languages--runtime-environments)  
 [2. Networking & Communication Protocols](#2-networking--communication-protocols)  
-[3. Operating Systems](#3-operating-systems)  
+[3. Operating Systems](#3-operating-system)  
+[4. Database Systems](#4-database-systems)  
 [References](#references)
 
 Building a strong enough foundational knowledge helps greatly in **understanding** the different technologies in-depth and how they are working behind the scenes, in addition to gaining the ability to **build new** solutions and tools
@@ -110,6 +111,42 @@ Now, you know the commands, the shell process, the processes, and the signals. S
 
 ---
 
+# 4. Database Management Systems
+
+Data is everywhere, think of your online messages, profiles, sensors data, media, or whatever. So It's important to design some **rules** for easy storing, retrieving, processing it for any reason like analysis and providing recommendations. So the **Database systems** were designed for that purpose, simply by initializing a **process** to **communicate** ( sending the queries and receiving the records, or information about the transaction state ) with other services through a **port**. 
+
+The server spins up a connection pool to make multiple requests to the database instance at the same time. And to communicate with the DB we need a library on the server-side to interface between the server and the DB instance and provide some security features 
+
+**Resources**
+
+Relational  [Article](https://dev.to/lmolivera/everything-you-need-to-know-about-relational-databases-3ejl) & Non Relational ( NOSQL ) [Article](https://dev.to/lmolivera/everything-you-need-to-know-about-nosql-databases-3o3h) ___ 7 Database Paradigms [video](https://www.youtube.com/watch?v=W2Z7fbCLSTw)
+
+Cracking The Coding Interview ( Chapter 14 ) & HackerRank Database Questions
+
+**Transaction Consistency Models** ⇒ ACID, BASE
+
+**Distributing the database instances**
+
+- **Partitioning** ⇒ Horizontally (Sharding) or Vertically ( with different schema )
+- Clustering trade-offs ( Advantages & Problems of them )
+- Different **Replication** paradigms ⇒ Leader-follower or Mesh ( point-to-point communication using gossip )
+- **Configuration management** tools like ZooKeeper
+- **PACELC** Theorem for distributed systems
+
+for Relational DB ⇒ Practice on
+
+- Querying multiple tables with **Joins**
+- **Pagination** to get a sequential subset of the records with an OFFSET and LIMIT or WHERE to make it [faster](https://www.youtube.com/watch?v=WDJRRNCGIRs&ab_channel=HusseinNasser)
+
+**Views & Materialized Views** to cache some hot results instead of re-search for them continuously 
+
+**MVCC ( MultiVersion Concurrency Control** **)** as implied in the name enables us to allow concurrent access to a database.
+
+**Buffer Pool** which is the DB area in the RAM used for caching or any intermediate operation before hitting the disk storage 
+
+**Transactions & Locks for Race Conditions**
+
+---
 # References
 
 **Technical** 
