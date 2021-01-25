@@ -4,8 +4,8 @@ to collect all the important topics that need to be covered in one place, and cl
 # Table of Contents
 [1. Languages & Runtime Environments](#1-languages--runtime-environments)  
 [2. Networking & Communication Protocols](#2-networking--communication-protocols)  
-[3. Operating Systems](#3-operating-system)  
-[4. Database Systems](#4-database-systems)  
+[3. Operating System Concepts](#3-operating-system-concepts)  
+[4. Database Management Systems](#4-database-management-systems)  
 [References](#references)
 
 Building a strong enough foundational knowledge helps greatly in **understanding** the different technologies in-depth and how they are working behind the scenes, in addition to gaining the ability to **build new** solutions and tools
@@ -82,7 +82,7 @@ URL Anatomy [Explanation](https://www.youtube.com/watch?v=ADQ_rhefgEk) & Differe
 
 ---
 
-# 3. Operating System
+# 3. Operating System Concepts
 
 Where do you think all our systems live & operate? Anything running on the computer uses its resources from CPU cycles, memory, network, or disk operation. So there should be some layer between these H.W. resources and their consumers
 
