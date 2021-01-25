@@ -2,8 +2,10 @@
 to collect all the important topics that need to be covered in one place, and clarify how all these topics are connected together in a meaningful way
 
 # Table of Contents
-[1. Languages & Runtime Environments](#1-languages--runtime-environments)     
-[2. Networking & Communication Protocols](#2-networking--communication-protocols)
+[1. Languages & Runtime Environments](#1-languages--runtime-environments)  
+[2. Networking & Communication Protocols](#2-networking--communication-protocols)  
+[3. Operating Systems](#3-operating-systems)  
+[References](#references)
 
 Building a strong enough foundational knowledge helps greatly in **understanding** the different technologies in-depth and how they are working behind the scenes, in addition to gaining the ability to **build new** solutions and tools
 
