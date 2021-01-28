@@ -150,7 +150,7 @@ for Relational DB ⇒ Practice on
 
 # 5. Application Programming Interface
 
-The interfacing between two things is very important as we have many separated abstracted pieces to be collected together for something meaningful. There're types of APIs but all with the same idea of calling another process
+The interfacing between two things is very important as we have many separated abstracted pieces working together to achieve a specific task. There're many types of APIs but all of them rely on the same idea, which os calling another process to execute a function in a completely abstracted from the internal impelementation details or configurations.
 
 **Examples**
 
@@ -163,10 +163,41 @@ The interfacing between two things is very important as we have many separated a
 
 The app may contain libraries for ML, HTTP client, web server e.g [ Tensorflow, Requests, Flask ] for Python or [ Tensorflow.js, Axios, Express ] for JavaScript
 
+### Architectures
 Different API Architectural Styles [Talk](https://www.youtube.com/watch?v=IvsANO0qZEg&ab_channel=OktaDev)
+- **Representational State Transfer (REST)** 
+Using the HTTP protocol, and JSON as the payload format    
+    - **Learn** from Free Code Camp [Tutorial](https://www.youtube.com/watch?v=GZvSYJDk-us)
+    - **Practice** with [BreakingbadAPI](https://breakingbadapi.com/) or [JsonPlaceHolder](https://jsonplaceholder.typicode.com/)
+
+- **Graph Query Language (GraphQL)**
+- **Remote Procedure Call (RPC)**
 
 
+### Life Cycle
+there're many tools to manage the API life cycle from designing and documenting to testing and monitoring. **Postman** is a good one for that and **OpenAPI** for the specefications.
 
+- **Designing** means to writedown and documemt all the resources, endpoints, methods, parameters, and responses.
+- **Documentation ( OpenAPI, AsyncAPI )** ⇒ Resources, Endpoints, Operations, Parameters, Authentication & Authorization
+- **Code Generation** ⇒ some tools can take the language and and generate some examples for the code accessing these endpoints
+- **Integration Tooling** ⇒ Automated Testing & Integration & Deployment Pipeline
+- **Monitoring** to observe the **latency** ( response time ) and the success **rate** of the tests scripts.
+
+- **Specefications** to document the API specefications we use some tools to generate the documentation, code samples, tools like
+    - **OpenAPI** for REST APIs between the services in the 3-tier architecture which is commonly based on HTTP/RPC protocol.
+    - **AsyncAPI** for Event-Driven APIs ( messaging architecture like Pub/Sub ) in some use cases like in the IoT or microservices.
+
+- **Mocking** get a fake responses if the API endpoints isn't ready yet which is very important to achieve a non-blocking development flow
+    - ⇒ with **postman mock-server** URL, by adding some request examples ( endpoint path, parameters, headers, responses )
+    - **Facker.js library**
+
+- **Collection Design ( API Specifications )** ⇒ Requests, Tests, Documentation
+- **Integrating 3rd-party services and tools in the CI/CD pipeline through APIs** ⇒ e.g Postman API, Burp Suit API, ... etc
+- **Scripting & Automation** ⇒ configuring some tests to run on the request
+    - before ( Pre ): setting some data, e.g parameters
+    - After ( Post ): checking the response code, prepare some data for the following request
+    
+ 
 ---
 
 ## General Performance Optimization 
