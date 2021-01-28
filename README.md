@@ -147,7 +147,78 @@ for Relational DB ⇒ Practice on
 **Transactions & Locks for Race Conditions**
 
 ---
-# References
+
+# 5. Application Programming Interface
+
+The interfacing between two things is very important as we have many separated abstracted pieces to be collected together for something meaningful. There're types of APIs but all with the same idea of calling another process
+
+**Examples**
+
+- The application may use the O.S. API to access something low-level like the network or the file system and the O.S. is interacting with the Hardware with the kernel drivers.
+- A web service may sent HTTP or RPC request to another service on top of a TCP connection, which will be converted through the Common gateway interface (CGI) to a normal function call with some parameters from the Environment variables, the parameters are the HTTP headers and the function is the application process itself
+- The cloud provider build a CLI package ( Commands = binaries  & Options = parameters ) or SDK ( Objects, Methods, Parameters )
+- Web interface or mobile app calls to the backend servers
+
+**Communication between Different Services** 
+
+The app may contain libraries for ML, HTTP client, web server e.g [ Tensorflow, Requests, Flask ] for Python or [ Tensorflow.js, Axios, Express ] for JavaScript
+
+Different API Architectural Styles [Talk](https://www.youtube.com/watch?v=IvsANO0qZEg&ab_channel=OktaDev)
+
+
+
+---
+
+## General Performance Optimization 
+
+
+- **7 [Tips](https://www.youtube.com/watch?v=R4NvQMF58K4&ab_channel=HusseinNasser) to Optimize Your Backend API Performance Without Caching**
+
+    The serialization representation (XML/JSON, pbf)   
+
+    Preheating connections ( to save the time of the handshake and the TLS )
+
+    H1 vs H2 ( use http2 in parallel requests )
+
+    TCP meltdown (big distance)
+
+    Proxies / LB  adds more latency so e.g try the layer LB 
+
+    Large payload (select * ) as it will need for serialization
+
+    Client-side processing (transforming the work)
+
+- **10 FrontEnd Performance [Tips](https://www.youtube.com/watch?v=mnuYVi5pcfQ&ab_channel=HusseinNasser) To Improve Your Application**
+
+    Optimistic queries
+
+    Group Notifications
+
+    Connection State
+
+    LRU Cache
+
+    Paging
+
+    Lazy Loading
+
+    Request what you Need
+
+    Design your UX So you Minimize Requests
+
+    Avoid Expensive Queries Even At Expense of Bad UX
+
+- API Payload Serialization-based Size
+SOAP XML > REST JSON > GraphQL JSON > PRC ProtoBuf
+- Database Tier
+Indexing, Materialized views, In-memory cache
+- Resources Load Reduction ( CPU, Memory, Bandwidth, I/O )
+Distributed cache, CDN, Browser cache ( HTTP [Caching](https://www.youtube.com/watch?v=HiBDZgTNpXY) )
+- UI Rendering
+JS downloading and execution, CSS rendering, Frames and events
+
+---
+## Resources
 
 **Technical** 
 
