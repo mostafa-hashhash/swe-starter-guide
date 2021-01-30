@@ -97,6 +97,8 @@ Where do you think all our systems live & operate? Anything running on the compu
 - Operating System Internals And Design Principles __ The little book of semaphores __ Medium [Article](https://medium.com/cracking-the-data-science-interview/the-10-operating-system-concepts-software-developers-need-to-remember-480d0734d710)
 - Understanding Embedded Linux [Playlist](https://www.youtube.com/playlist?list=PLWXRxAK4bUzc9gq-W2xWDe9zEaDcowLfs) __ The 10 OS Concepts SWD Need to Remember - [Article](https://medium.com/cracking-the-data-science-interview/the-10-operating-system-concepts-software-developers-need-to-remember-480d0734d710)
 
+- Udacity Introduction Os [Course](https://classroom.udacity.com/courses/ud923)
+
 **Processes**
 
 [Virtual Memory](https://www.youtube.com/watch?v=hEh6ZVP_U1w) ( During The Execution ) ,, [State Diagram](https://www.youtube.com/watch?v=JhWREa77Z88) ( The Life Cycle )
