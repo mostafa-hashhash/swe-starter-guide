@@ -96,7 +96,8 @@ Where do you think all our systems live & operate? Anything running on the compu
 - Cracking The Coding Interview ( Chapter 15 ) __ Programming Interviews Exposed ( Concurrency Chapter )
 - Operating System Internals And Design Principles __ The little book of semaphores __ Medium [Article](https://medium.com/cracking-the-data-science-interview/the-10-operating-system-concepts-software-developers-need-to-remember-480d0734d710)
 - Understanding Embedded Linux [Playlist](https://www.youtube.com/playlist?list=PLWXRxAK4bUzc9gq-W2xWDe9zEaDcowLfs) __ The 10 OS Concepts SWD Need to Remember - [Article](https://medium.com/cracking-the-data-science-interview/the-10-operating-system-concepts-software-developers-need-to-remember-480d0734d710)
--Udacity Intro [Course](https://classroom.udacity.com/courses/ud923)
+
+- Udacity Introduction Os [Course](https://classroom.udacity.com/courses/ud923)
 
 **Processes**
 
